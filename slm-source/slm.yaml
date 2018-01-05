@@ -1,0 +1,25 @@
+#      Licensed Materials - Property of IBM
+#
+#      © IBM Corp. 2016
+
+policy: 1.0.0
+
+info:
+  title: SLM Traffic Shaping
+  name: slm
+  version: 1.0
+  description: Policy To Shape Traffic.
+  contact:
+        name: Chris Phillips
+        email: chris.phillips@uk.ibm.com
+
+attach:
+    - rest
+    - soap
+
+properties:
+    $schema: "http://json-schema.org/draft-04/schema#"
+    type: object
+
+gateways:
+    - datapower-gateway
